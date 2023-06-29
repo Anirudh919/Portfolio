@@ -1,0 +1,91 @@
+
+.row{
+  padding: 100px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+}
+/* .accordion {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+} */
+/* .col-6{
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+} */
+
+.accordion-item {
+  
+  border-bottom: 1px solid #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  
+}
+
+.accordion-header {
+  padding: 15px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.accordion-content {
+  padding: 12px;
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+/* .progress-bar {
+    width: 40rem; 
+    height: 10px; 
+    background-color: #e0e0e0; 
+    border-radius: 5px; 
+    
+} */
+  
+.progress {
+  
+    height: 100%;
+    background-color: rgb(143, 71, 187); 
+    border-radius: 5px; 
+ }
+
+/* Default styles */
+.progress-bar {
+  width: 40rem;
+  height: 10px; 
+  background-color: #e0e0e0; 
+  border-radius: 5px; 
+}
+
+@media (min-width:320px) and (max-width:556px){
+  .progress-bar{
+    width: 15rem;
+  }
+}
+/* Styles for smaller screens */
+@media (min-width: 557px) and (max-width:767px) {
+  .progress-bar {
+    width: 25rem; /* Adjusted width for smaller screens */
+  }
+}
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .progress-bar {
+    width: 40rem; /* Adjusted width for medium screens */
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 992px) and (max-width:1200px){
+  .progress-bar {
+    width: 20rem; /* Adjusted width for larger screens */
+  }
+}
+
+
+  
+  

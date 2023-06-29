@@ -1,0 +1,100 @@
+<section class="container-fluid text-center" id="skill">
+    <h1 class="display-5 fw-bold text-center">Skills</h1>
+    <p class="fs-5 text-center">My technical level</p>
+    <div class="row">
+
+        <div class="col-lg-6 ">
+            <div class="accordion-item">
+                <div type="button" class="accordion-header d-flex justify-content-between" (click)="OnClick1()">
+                    <span class="fs-5"><i class="bi bi-braces"></i>
+                        Front-End</span> <span *ngIf="dropdown1">
+                        <i class="bi bi-chevron-up"></i></span>
+                    <span *ngIf="!dropdown1"><i class="bi bi-chevron-down"></i></span>
+                </div>
+                <div *ngIf="!!dropdown1" class="d-flex align-content-center flex-wrap px-4">
+                    <div *ngFor="let item of this.skills[0].frontEnd">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label">{{ item.skill }}</label>
+                            <p>{{ item.percent }}</p>
+                        </div>
+                        <div class="progress-bar mb-3">
+                            <div class="progress progress-bar-striped active" [ngStyle]="{ width: item.percent }">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0 ">
+            <div class="accordion-item ">
+                <div type="button" class="accordion-header d-flex justify-content-between" (click)="OnClick2()">
+                    <span class="fs-5"><i class="bi bi-database"></i>
+                        Back-End</span> <span *ngIf="dropdown2">
+                        <i class="bi bi-chevron-up"></i></span>
+                    <span *ngIf="!dropdown2"><i class="bi bi-chevron-down"></i></span>
+                </div>
+                <div *ngIf="!!dropdown2" class="d-flex align-content-center flex-wrap px-4">
+                    <div *ngFor="let item of this.skills[0].backEnd">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label">{{ item.skill }}</label>
+                            <p>{{ item.percent }}</p>
+                        </div>
+                        <div class="progress-bar mb-3">
+                            <div class="progress progress-bar-striped active" [ngStyle]="{ width: item.percent }">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4 ">
+            <div class="accordion-item ">
+                <div type="button" class="accordion-header d-flex justify-content-between" (click)="OnClick3()">
+                    <span class="fs-5"><i class="bi bi-laptop"></i>
+                        Programming Language</span> <span *ngIf="dropdown3">
+                        <i class="bi bi-chevron-up"></i></span>
+                    <span *ngIf="!dropdown3"><i class="bi bi-chevron-down"></i></span>
+                </div>
+                <div *ngIf="!!dropdown3" class="d-flex align-content-center flex-wrap px-4">
+                    <div *ngFor="let item of this.skills[0].programming">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label">{{ item.skill }}</label>
+                            <p>{{ item.percent }}</p>
+                        </div>
+                        <div class="progress-bar mb-3">
+                            <div class="progress progress-bar-striped active" [ngStyle]="{ width: item.percent }">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+            <div class="accordion-item ">
+                <div type="button" class="accordion-header d-flex justify-content-between" (click)="OnClick4()">
+                    <span class="fs-5"><i class="bi bi-magnet"></i>
+                        Familiar Skill</span> <span *ngIf="dropdown4">
+                        <i class="bi bi-chevron-up"></i></span>
+                    <span *ngIf="!dropdown4"><i class="bi bi-chevron-down"></i></span>
+                </div>
+                <div *ngIf="!!dropdown4" class="d-flex align-content-center flex-wrap px-4">
+                    <div *ngFor="let item of this.skills[0].familiar">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label">{{ item.skill }}</label>
+                            <p>{{ item.percent }}</p>
+                        </div>
+                        <div class="progress-bar mb-3">
+                            <div class="progress progress-bar-striped active" [ngStyle]="{ width: item.percent }">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

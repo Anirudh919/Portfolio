@@ -1,0 +1,45 @@
+<div class="container-fluid" id="contact">
+    <h1 class="display-5 fw-bold text-center"> Contact Me</h1>
+    <div class="row justify-content-center mt-3">
+        <div class="col-lg-6 col-md-8 col-sm-10 text-center mt-5">
+            <h5 class="display-5 fw-bold mt-2"><i class="bi bi-telephone" (click)="callme()"></i> Call Me</h5>
+            <p class="fs-5 mt-2">91491 59762</p>
+            <h5 class="display-5 fw-bold "><i class="bi bi-envelope" (click)="mailme()"></i> Email</h5>
+            <p class="fs-5 mt-2">anirudhkashyap67@gmail.com</p>
+            <h5 class="display-5 fw-bold "><i class="bi bi-geo-alt" (click)="location()"></i> Address </h5>
+            <p class="fs-5 mt-2">House no. 91 , Jai Nagar , Double Fatak , Moradabad</p>
+        </div>
+        <div class="col-lg-5 col-md-8 col-sm-10  my-4">
+            <div *ngIf="error" style="text-align: center" class="alert alert-danger" role="alert">
+                Please fill correct inputs
+            </div>
+            <div *ngIf="message" class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+            <div style="text-align: center" *ngIf="submitted" class="alert alert-primary" role="alert">
+                Done !!
+            </div>
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form method="post" [formGroup]="contactform" (submit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" formControlName="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" formControlName="senderEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"
+                            formControlName="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4" style="width: 100%;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container  text-center" id="project">
+    <h1 class="display-5 fw-bold mt-5">Project</h1>
+    <p class="fs-5 my-5">My Projects</p>
+    <div class="row d-flex justify-content-center">
+        <div class="col-4 mx-5 card shadow p-2 mb-5 bg-body-tertiary rounded" style="width: 20rem;">
+            <h3>Employee Managment</h3>
+            <div class="img-video-wrp ">
+                <figure class="">
+                    <ng-container *ngIf="videodisable; else videoblock" style="z-index: -1;">
+                        <img src="../assets/employee.png" class="object-fit-fill border rounded" height="200px"
+                            width="300px">
+                    </ng-container>
+                    <ng-template #videoblock style="z-index: -1;">
+                        <!-- <iframe src="../assets/project.jpg" width="200px" height="200px"></iframe> -->
+                        <video src="../assets/project.jpg" class="object-fit-fill" autoplay height="200px"
+                            width="300px"></video>
+                    </ng-template>
+                    <!-- <div class="play-icon-box">
+                        <img [src]="videoIcon" (click)="changeImg()" [title]="play" width="50px" height="50px"
+                            class="img-fluid">
+                    </div> -->
+                </figure>
+            </div>
+            <div class="card-body">
+                <p class="card-text">CRUD operation perform with using Node Js in MySQL Database</p>
+                <button class="btn btn-primary "><a href="https://github.com/Anirudh919/Employee-Application.git"
+                        target="_blank">View</a></button>
+            </div>
+        </div>
+        <div class="col-4 mx-5 card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 20rem;">
+            <h3>Hospital Managment</h3>
+            <img src="../assets/hospital.jpg" class="card-img-top" alt="..." height="200px" width="300px">
+            <div class="card-body">
+                <p class="card-text">CRUD operation perform with using Node Js in MySQL Database & attach sendgrid
+                    message
+                    funtionality</p>
+                <button class="btn btn-primary"><a href="https://github.com/Anirudh919/HospitalManagementSystem.git"
+                        target="_blank">View</a></button>
+            </div>
+        </div>
+        <div class="col-4 mx-5 card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 20rem;">
+            <h3>Shopping Site</h3>
+            <img src="../assets/ecommerce.jpg" class="card-img-top" alt="..." height="200px" width="300px">
+            <div class="card-body">
+                <p class="card-text">E-commerce site & high level application design in Angular</p>
+                <button class="btn btn-primary"><a href="">View</a></button>
+            </div>
+        </div>
+    </div>
+</div>
