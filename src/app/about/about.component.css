@@ -8,3 +8,6 @@ img{
 .margin{
     margin-top: 7rem;
   }
+  .container-fluid{
+    transition: max-height 0.3s ease-out;
+  }

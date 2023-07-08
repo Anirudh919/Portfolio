@@ -36,6 +36,9 @@
 .accordion-content.active {
   display: block;
 }
+.container-fluid{
+  transition: max-height 0.3s ease-out;
+}
 
 /* .progress-bar {
     width: 40rem; 

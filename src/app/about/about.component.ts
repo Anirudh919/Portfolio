@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   downloadPDF() {
     const fileUrl = '../../../assets/Resume.pdf';
-    const fileName = 'Resume.pdf';
+    const fileName = 'resume.pdf';
 
     // Trigger the download
     const link = document.createElement('a');

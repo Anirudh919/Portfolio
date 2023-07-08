@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+
   currentRouter = this.router.url;
   submitted = false;
   message = false;
